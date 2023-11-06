@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio-3.0/static/css/main.cab0e619.css",
+    "main.js": "/portfolio-3.0/static/js/main.beb2429e.js",
+    "static/js/787.e7d43de1.chunk.js": "/portfolio-3.0/static/js/787.e7d43de1.chunk.js",
+    "static/media/collage3.png": "/portfolio-3.0/static/media/collage3.b62c9978552a5051e6d9.png",
+    "static/media/collage1.png": "/portfolio-3.0/static/media/collage1.50d94811393b9445fe03.png",
+    "static/media/collage2.png": "/portfolio-3.0/static/media/collage2.3ca35928b12b5f7871c4.png",
+    "static/media/8ball-preview.png": "/portfolio-3.0/static/media/8ball-preview.6d1b7edbdf361749c256.png",
+    "static/media/tshirtfall2018-transparent.png": "/portfolio-3.0/static/media/tshirtfall2018-transparent.6484fbae6cdcb11116c6.png",
+    "static/media/chinatown.png": "/portfolio-3.0/static/media/chinatown.a2aa8f83f233db9eefe9.png",
+    "static/media/group-creation.mp4": "/portfolio-3.0/static/media/group-creation.01c843384c42ed350c3c.mp4",
+    "static/media/summer2023-preview.png": "/portfolio-3.0/static/media/summer2023-preview.1ae4db81594cf7f85f1b.png",
+    "static/media/list-item.mp4": "/portfolio-3.0/static/media/list-item.6fd860e2f0dc4540df93.mp4",
+    "static/media/artcamp-2.png": "/portfolio-3.0/static/media/artcamp-2.2d16989e59dd86dde12a.png",
+    "static/media/ecosystem.mp4": "/portfolio-3.0/static/media/ecosystem.0804a2a3fced158976f2.mp4",
+    "static/media/artcamp-1.png": "/portfolio-3.0/static/media/artcamp-1.68adbb22a1ef8b057b06.png",
+    "static/media/sm-logo.mp4": "/portfolio-3.0/static/media/sm-logo.55915ad2be3733a5d02d.mp4",
+    "static/media/combineShards.mp4": "/portfolio-3.0/static/media/combineShards.5d66a8b298612eae5a2c.mp4",
+    "static/media/iphone.png": "/portfolio-3.0/static/media/iphone.ce6e59875b16580a0238.png",
+    "static/media/ABCMarfa-Medium.otf": "/portfolio-3.0/static/media/ABCMarfa-Medium.5c48ed474f03fcf4f1f7.otf",
+    "static/media/ABCMarfa-Light.otf": "/portfolio-3.0/static/media/ABCMarfa-Light.7b7f1f4b53c5edc39e6b.otf",
+    "static/media/ABCMarfa-Regular.otf": "/portfolio-3.0/static/media/ABCMarfa-Regular.828ceca393877e0f4ac5.otf",
+    "static/media/ABCMarfa-Thin.otf": "/portfolio-3.0/static/media/ABCMarfa-Thin.a47a0bf90bf296e0fec0.otf",
+    "static/media/splashAnimation.mp4": "/portfolio-3.0/static/media/splashAnimation.7e6fc97e7c2f6f80d9ac.mp4",
+    "static/media/ABCMarfaMono-Semibold.otf": "/portfolio-3.0/static/media/ABCMarfaMono-Semibold.3df6bddf16fc123466aa.otf",
+    "static/media/ABCMarfaMono-Regular.otf": "/portfolio-3.0/static/media/ABCMarfaMono-Regular.b37c6201704097dccf58.otf",
+    "static/media/ABCMarfaMono-Light.otf": "/portfolio-3.0/static/media/ABCMarfaMono-Light.bd5a07c3a83c41595091.otf",
+    "static/media/github.svg": "/portfolio-3.0/static/media/github.6785b60ba5986fe1b3c0c6b52c8da9ec.svg",
+    "static/media/email.svg": "/portfolio-3.0/static/media/email.b45b4824d70b018681eb01291976d2e7.svg",
+    "static/media/linkedin.svg": "/portfolio-3.0/static/media/linkedin.09f94e79046a9f94399264882cf4bcc3.svg",
+    "index.html": "/portfolio-3.0/index.html",
+    "static/media/close.svg": "/portfolio-3.0/static/media/close.8333fc263dde30edae5309fad94debd0.svg",
+    "static/media/burger.svg": "/portfolio-3.0/static/media/burger.7bb53c94e24b75cce95fd88c4d2da881.svg",
+    "main.cab0e619.css.map": "/portfolio-3.0/static/css/main.cab0e619.css.map",
+    "main.beb2429e.js.map": "/portfolio-3.0/static/js/main.beb2429e.js.map",
+    "787.e7d43de1.chunk.js.map": "/portfolio-3.0/static/js/787.e7d43de1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cab0e619.css",
+    "static/js/main.beb2429e.js"
+  ]
+}
