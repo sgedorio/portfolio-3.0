@@ -1,0 +1,266 @@
+.preview {
+    width: 100%;
+    /* background-color: #F9F9F9; */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    
+}
+
+.preview-image {
+    position: relative;
+    width: 100%; /* change later, depends on desktop width */
+    /* aspect-ratio: 4/3; */
+    aspect-ratio: 1/1;
+    border-radius: 0 4.28% 4.28% 4.28%;
+    border: 0.5px solid #DADADA;
+    /* background: linear-gradient(245deg, #314321 -321.85%, rgba(241, 241, 241, 0.00) 80.73%); */
+    background: linear-gradient(245deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 88.73%);
+    overflow: hidden;
+}
+
+.preview-image.ms-onboarding-preview {
+    background: linear-gradient(245deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 68.73%);
+}
+
+.preview-image.ms-social-preview {
+    background: linear-gradient(65deg, #314321 -71.85%, rgba(241, 241, 241, 0.00) 80.73%);
+}
+
+.preview-image.wdc-preview {
+    background: linear-gradient(245deg, #314321 -121.85%, rgba(241, 241, 241, 0.00) 80.73%);
+}
+
+.preview-image.sm-preview {
+    background: linear-gradient(245deg, #314321 -321.85%, rgba(241, 241, 241, 0.00) 80.73%);
+}
+
+.divider {
+    margin: 0;
+    width: 100%;
+    background-color: #DADADA;
+    height: 0.5px;
+}
+
+.preview-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.preview h1 {
+    line-height: 16px;
+    margin: 0;
+}
+
+.preview-caption h3 {
+    width: 56px;
+    margin: 0;
+}
+
+.preview-caption p {
+    width: 56%;
+    margin: 0;
+}
+
+.preview-caption-overview, .preview-caption-role, .preview-caption-tools, .preview-caption-skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-prototypes .mockup {
+    width: 36%;
+}
+
+/* Specific preview CSS */
+
+.mobile-prototypes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    opacity: 0.6;
+    transition: opacity 0.6s ease-in-out; 
+}
+
+/* MS Onboarding & Supply Me */
+
+.ms-onboarding-preview .mobile-prototypes .first,
+.sm-preview .mobile-prototypes .first {
+    transform:
+        perspective(1200px)
+        translateZ(-80px)
+        translateY(-32%);
+    transition: transform 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4);
+}
+
+.ms-onboarding-preview .mobile-prototypes .second,
+.sm-preview .mobile-prototypes .second  {
+    transform:
+        perspective(1200px)
+        translateZ(-80px)
+        translateY(32%);
+    transition: transform 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4);
+}
+
+.ms-onboarding-preview .mobile-prototypes:hover,
+.sm-preview .mobile-prototypes:hover {
+    opacity: 0.9;
+}
+
+/* MS Social - note, the 19px value was determined through trial-and-error since the translateZ affected the X position as well  */
+
+.ms-social-preview .mobile-prototypes .first {
+    z-index: 2;
+    transform:
+        perspective(1200px)
+        translateZ(-80px)
+        translateX(calc(50% + 19px));
+        /* translate(100%, 0); */
+    transition: transform 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4);
+    /* transition: transform 0.6s ease-in-out; */
+}
+
+.ms-social-preview .mobile-prototypes .second {
+    opacity: 0;
+    z-index: 1;
+    transform:
+        perspective(1200px)
+        translateZ(-80px)
+        translateX(calc(-50% - 19px));
+    /* transition: transform 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4), */
+    transition: transform 0.65s ease-in-out, 
+    opacity 0.3s linear;
+}
+
+/* Resets all mobile prototypes to original position */
+.mobile-prototypes:hover .first,
+.mobile-prototypes:hover .second {
+    transform: 
+    translateY(0);
+    opacity: 0.9;
+}
+
+/* Images & Videos */
+
+.image-prototypes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-prototype video {
+    width: 100%;
+    /* opacity: 0.8; */
+}
+
+/* In Progress */
+
+.in-progress {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    color: #314321;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.preview:hover .in-progress {
+    opacity: 0.6;
+} 
+
+/* ARTCAMP */
+
+.image-prototypes > .artcamp img {
+    border-radius: 0 4.28% 4.28% 4.28%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.artcamp.layer1 {
+    mix-blend-mode: screen;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.artcamp.layer1 > .second {
+    opacity: 0;
+    mix-blend-mode: color-dodge;
+    transition: opacity 0.5s ease-in-out;
+} 
+
+.artcamp.layer2 {
+    mix-blend-mode: overlay;
+    filter: blur(4px);
+}
+
+.artcamp.layer2 > .second {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-prototypes:hover .artcamp.layer1 > .second {
+    opacity: 1;
+}
+
+.image-prototypes:hover .artcamp.layer2 > .second {
+    opacity: 1;
+}
+
+/* WDC */
+
+.image-prototypes > .wrek img {
+    position: absolute;
+    mix-blend-mode: multiply;
+    top: 50%;
+    left: 50%;
+    width: 64%;
+    opacity: 0.6;
+    transform: 
+    scale(0.70)
+    rotateY(180deg)
+    translate(70%, -70%);
+    transition: opacity 1s ease-in-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+.image-prototypes:hover > .wrek img {
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    transform:
+    scale(1)
+    rotateY(0deg)
+    translate(-50%, -50%);
+}
+
+
+/* 8-Ball */
+.image-prototypes > .eight-ball img {
+    border-radius: 0 4.28% 4.28% 4.28%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-prototypes:hover > .eight-ball img {
+    opacity: 0.9;
+}
+
+/* Summer 2023 */
+.video-prototype > video.summer-2023 {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.video-prototype:hover > video.summer-2023 {
+    opacity: 0.9;
+}

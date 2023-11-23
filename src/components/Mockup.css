@@ -1,0 +1,33 @@
+/* iPhone mockup */
+
+.mockup {
+    /* width: 200px; */
+    height: auto;    
+    aspect-ratio: calc(400 / 789.05);
+    position: relative;
+}
+
+.mockup > * {
+    position: absolute;
+}
+
+.iphone {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+
+.screen {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    /* width: calc(374.22 / 442.5 * 100%); */
+    /* width: 84.7%; */
+    width: 85.7%;
+    height: auto;
+    z-index: 1;
+}

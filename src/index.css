@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Fonts */
+
+@font-face {
+  font-family: Marfa-Light;
+  src: url(./fonts/ABCMarfa-Light.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Marfa-Thin;
+  src: url(./fonts/ABCMarfa-Thin.otf);
+}
+
+@font-face {
+  font-family: Marfa-Regular;
+  src:url(./fonts/ABCMarfa-Regular.otf);
+}
+
+@font-face {
+  font-family: Marfa-Medium;
+  src:url(./fonts/ABCMarfa-Medium.otf)
+}
+
+@font-face {
+  font-family: Marfa-Semibold;
+  src:url(./fonts/ABCMarfa-Semibold.otf)
+}
+
+@font-face {
+  font-family: MarfaMono-Light;
+  src: url(./fonts/ABCMarfaMono-Light.otf);
+}
+
+@font-face {
+  font-family: MarfaMono-Regular;
+  src: url(./fonts/ABCMarfaMono-Regular.otf);
+}
+
+@font-face {
+  font-family: MarfaMono-Semibold;
+  src: url(./fonts/ABCMarfaMono-Semibold.otf);
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+  color: #314321;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-family: Marfa-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1.5px;
+}
+
+h2 { 
+  font-family: Marfa-Thin;
+  /* font-family: pragmatica, sans-serif; */
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-family: MarfaMono-Regular;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -1.25px;
+}
+
+p { 
+  font-family: MarfaMono-Regular;
+  font-size: 12px;
+  line-height: 0px; /* 0% */
+  letter-spacing: -1.25px;
+}
+
+.nav-container li, .nav-container p, .in-progress p {
+  font-family: MarfaMono-Light;
+  font-size: 12px;
+  line-height: 0px; /* 0% */
+  line-height: 12.8px;
+  letter-spacing: -1.25px;
+}
+
+.nav-container a {
+  color: #314321;
+}
+
+.preview-caption p, .case-study p, li {
+  font-family: Marfa-Light;
+  /* font-family: pragmatica, sans-serif; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.5px;
+}
+
+.bold {
+  font-family: MarfaMono-Semibold;
+}
+
+.bold-reg {
+  font-family: Marfa-Semibold !important;
+}
+
+p.img-label {
+  margin-top: 8px;
+  font-family: MarfaMono-Regular;
+  font-size: 12px;
+  line-height: 14px; /* 0% */
+  letter-spacing: -1.25px;
 }
