@@ -41,6 +41,10 @@ function App() {
       prevWindowWidth = currentWindowWidth;
     };
 
+    if (window.innerWidth < 1024) {
+      setSidebarVisibility(false);
+    }
+
     window.addEventListener('resize', handleResize);
 
     return () => {
