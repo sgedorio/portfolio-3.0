@@ -72,7 +72,7 @@ export default function MSOnboarding() {
                         </div>
                         <div className="tools">
                             <h3>Tools</h3>
-                            <p>Figma, FigJam, Mixpanel</p>
+                            <p>Figma<br/>FigJam<br/>Mixpanel</p>
                         </div>
                         <div className="timeline">
                             <h3>Timeline</h3>

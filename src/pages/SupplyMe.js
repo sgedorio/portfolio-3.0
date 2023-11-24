@@ -67,7 +67,7 @@ export default function SupplyMe() {
                         </div>
                         <div className="tools">
                             <h3>Tools</h3>
-                            <p>Figma, Balsamiq, Illustrator</p>
+                            <p>Figma<br/>Balsamiq<br/>Illustrator</p>
                         </div>
                         <div className="timeline">
                             <h3>Timeline</h3>

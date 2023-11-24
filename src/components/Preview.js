@@ -158,13 +158,13 @@ export default function Preview(props) {
                 {props.item.skills && (
                 <div className="preview-caption-skills">
                     <h3>Skills</h3>
-                    <p>{props.item.skills}</p>
+                    <p>{props.item.skills.split(', ').join('\n')}</p>
                 </div>)}
 
                 {props.item.tools && (
                 <div className="preview-caption-tools">
                     <h3>Tools</h3>
-                    <p>{props.item.tools}</p>
+                    <p>{props.item.tools.split(', ').join('\n')}</p>
                 </div>)}
             </div>
         </div>
