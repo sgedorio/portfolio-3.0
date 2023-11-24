@@ -1,6 +1,6 @@
 import React from 'react';
 import Mockup from '../components/Mockup';
-import splashScreen from "../img/ms-onboarding/splash.mp4"
+// import splashScreen from "../img/ms-onboarding/splash.mp4"
 import userFocus from "../img/sm/userdomain.png"
 import existingSolutions from "../img/sm/existingSolutions.png"
 import digitalObs from "../img/sm/digitalobservations.png"
