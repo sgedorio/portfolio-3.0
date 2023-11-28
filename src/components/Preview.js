@@ -13,26 +13,10 @@ export default function Preview(props) {
     useEffect(() => {
         const mobilePrototypes = document.querySelectorAll('.mobile-prototypes');
         const videoPrototypes = document.querySelectorAll('.video-prototype');
-        console.log(videoPrototypes);
       
-        const handleMouseEnter = () => {
-            //video
-            videoPrototypes.forEach(element => {
-                const videos = element.getElementsByTagName('video');
-                Array.from(videos).forEach(video => {
-                    if (video.paused) {
-                        video.currentTime = 0;
-                        video.play().catch(error => {
-                            // Handle any error that occurs while playing the video
-                            console.error('Error occurred while playing the video:', error);
-                        });
-                    }
-                });
-            })
-
-            //mobile  
-            mobilePrototypes.forEach(element => {
-            const videos = element.getElementsByTagName('video');
+        const handleMouseEnter = (event) => {
+            const target = event.target;
+            const videos = target.getElementsByTagName('video');
             Array.from(videos).forEach(video => {
                 if (video.paused) {
                     video.currentTime = 0;
@@ -41,29 +25,12 @@ export default function Preview(props) {
                         console.error('Error occurred while playing the video:', error);
                     });
                 }
-            });
         });
     };
       
-        const handleMouseLeave = () => {
-            //video
-            videoPrototypes.forEach(element => {
-                const videos = element.getElementsByTagName('video');
-                Array.from(videos).forEach(video => {
-                    if (!video.paused) {
-                      video.pause();
-                    //   if (video.parentElement.classList.contains('combine-shards')) { 
-                      if (video.dataset.currentTime !== undefined) { 
-                        // console.log(video.dataset.currentTime);
-                        video.currentTime = video.dataset.currentTime;
-                      } else video.currentTime = 0;
-                    }
-                });
-              });
-            
-            //mobile
-            mobilePrototypes.forEach(element => {
-            const videos = element.getElementsByTagName('video');
+        const handleMouseLeave = (event) => {
+            const target = event.target;
+            const videos = target.getElementsByTagName('video');
             Array.from(videos).forEach(video => {
                 if (!video.paused) {
                     video.pause();
@@ -73,7 +40,6 @@ export default function Preview(props) {
                     video.currentTime = video.dataset.currentTime;
                     } else video.currentTime = 0;
                 }
-            });
             });
         };
 

@@ -16,14 +16,26 @@ export default function Mockup (props) {
         }
     }, [dataCurrentTime]);
 
+    const shouldAutoPlay = props.autoPlay || !window.matchMedia('(hover: hover)').matches;
+
     return (
         <div className={`mockup ${props.className ? props.className : ""}`} style={{ width: props.width }}>
             <img src={iphone} className="iphone" alt="iPhone mockup" />
             <img src={props.staticScreen} className="screen" alt="screen" />
-            { props.autoPlay
+            {/* { props.autoPlay
             ? <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop autoPlay playsInline/>
             : <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop playsInline/>
-            }
+            } */}
+            <video
+                src={props.videoScreen}
+                className="screen"
+                ref={videoRef}
+                data-current-time={props['data-current-time']}
+                muted
+                loop
+                playsInline
+                autoPlay={shouldAutoPlay}
+            />
         </div>
     )
 }
