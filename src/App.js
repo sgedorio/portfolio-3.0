@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import About from './pages/About';
 import Play from './pages/Play';
@@ -13,7 +14,7 @@ import './App.css';
 import burger from './img/burger.svg';
 
 function App() {
-  const [isSidebarVisible, setSidebarVisibility] = useState(true);
+  const [isSidebarVisible, setSidebarVisibility] = useState(window.innerWidth > 1024);
   const [isToggled, setToggled] = useState(false);
 
   const toggleSidebar = () => {
@@ -39,11 +40,8 @@ function App() {
         setToggled(false);
       }
       prevWindowWidth = currentWindowWidth;
-    };
 
-    if (window.innerWidth < 1024) {
-      setSidebarVisibility(false);
-    }
+    };
 
     window.addEventListener('resize', handleResize);
 
@@ -53,7 +51,6 @@ function App() {
   }, [isSidebarVisible, isToggled]);
 
   return (
-    /* Remove HashRouter when using real domain instead of GH pages */
     <Router>
       <div className="App">
           <Sidebar isSidebarVisible={isSidebarVisible} isToggled={isToggled} toggleSidebar={toggleSidebar} />
@@ -76,6 +73,7 @@ function App() {
           ? <div className="toggle-overlay" onClick={toggleSidebar}/>
           : <div className="toggle-overlay hidden"/> }
       </div>
+      <Analytics />
     </Router>
   );
 }

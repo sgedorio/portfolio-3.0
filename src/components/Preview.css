@@ -265,3 +265,36 @@
 .video-prototype:hover > video.summer-2023 {
     opacity: 0.9;
 }
+
+/* Responsive layouts */
+
+/* Touchscreens and phones */
+@media (hover: none) {
+    .mobile-prototypes .first,
+    .mobile-prototypes .second {
+        transform: 
+        translateY(0) !important;
+        opacity: 0.9 !important;
+    }
+
+    .in-progress {
+        opacity: 0.6 !important;
+    }
+
+    .artcamp.layer1 > .second {
+        opacity: 1 !important;
+    }
+    
+    .artcamp.layer2 > .second {
+        opacity: 1 !important;
+    }
+
+    .image-prototypes > .wrek img {
+        mix-blend-mode: normal !important;
+        opacity: 0.8 !important;
+        transform:
+        scale(1) 
+        rotateY(0deg)
+        translate(-50%, -50%) !important;
+    }
+}

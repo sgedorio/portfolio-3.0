@@ -38,7 +38,7 @@ const workPreviewsData = [
                 }
             ]
         },
-        overview: "Not one music platform has truly perfected the social aspect of the music listening experience yet. Inspired by the intimate world of YouTube comments, Instagram’s defunct Activity feed, Facebook groups, and the sleek display of fleeting data across fintech apps, Marine Snow crafted a unique social experience that blends the joy of listening with engaging discussions, all in a single space.",
+        overview: "Inspired by the intimate world of YouTube comments, Instagram’s defunct Activity feed, Facebook groups, and the sleek display of fleeting data across fintech apps, Marine Snow crafted a unique social experience that blends the joy of listening with engaging discussions, all in a single space.",
         role: "Product Designer",
         skills: "Mobile Interface Design"
     },

@@ -112,8 +112,8 @@ export default function WREKDesignCollective() {
                     <p>T-shirts provided by our partnership with local Atlanta thrift store <a href="https://www.lnfy.org/">Lost-n-Found Youth</a> who ran a pop-up during our event.</p>
                 </div>
                 <div className="right">
-                    <video src={wrektacular2019vid} autoPlay loop muted />
-                    <a href="https://www.youtube.com/watch?v=HHom-IMcxvw"><video src={wrektacular2019dance} autoPlay loop muted /></a>
+                    <video src={wrektacular2019vid} autoPlay loop muted playsinline/>
+                    <a href="https://www.youtube.com/watch?v=HHom-IMcxvw"><video src={wrektacular2019dance} autoPlay loop muted playsinline/></a>
                     <img src={wrektacular2019Green} alt="wrektacular2019-green" />
                     <img src={wrektacular2019Blue} alt="wrektacular2019-blue" />
                     <div className="column-grid--2">
@@ -178,7 +178,7 @@ export default function WREKDesignCollective() {
                 </div>
                 <div className="right">
                     <img src={misc1} alt="misc1" />
-                    <video src={misc2} autoPlay loop muted />
+                    <video src={misc2} autoPlay loop muted playsinline/>
                     <img src={misc3} alt="misc3" />
                     <img src={misc4} alt="misc4" />
                 </div>

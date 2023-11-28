@@ -21,8 +21,8 @@ export default function Mockup (props) {
             <img src={iphone} className="iphone" alt="iPhone mockup" />
             <img src={props.staticScreen} className="screen" alt="screen" />
             { props.autoPlay
-            ? <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop autoPlay/>
-            : <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop />
+            ? <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop autoPlay playsInline/>
+            : <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop playsInline/>
             }
         </div>
     )
