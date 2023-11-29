@@ -1,4 +1,5 @@
 .content-container {
+  width: calc(100% - (40px + 224px + 40px));
   background-color: rgb(244, 244, 244);
   padding: 40px 40px 40px calc(224px + 40px);
   flex-grow: 1;
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .right .mockup {
@@ -504,6 +506,7 @@
   /* General layout */
 
   .content-container {
+    width: calc(100% - (40px + 72px));
     padding: 40px 40px 40px 72px;
   }
 
@@ -553,7 +556,23 @@
 
 }
 
+/* 600 + 40px left + 72px right = 712 */
+@media screen and (max-width: 712px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .img-label-container {
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
+
+.row-1 .left {
+  width: 100%;
+}
+
   .preview-layout {
     width: 100%;
     display: grid;

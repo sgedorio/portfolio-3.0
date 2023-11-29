@@ -97,7 +97,24 @@ export default function Preview(props) {
 
                 {isVideoPreview && (
                     <div className="video-prototype">
-                        <video className={previewAsset.video.className} src={previewAsset.video.vidSrc} muted={true} loop={true} />
+                        {window.matchMedia("(hover: none)").matches ? (
+                            <video
+                                className={previewAsset.video.className}
+                                src={previewAsset.video.vidSrc}
+                                muted
+                                loop
+                                playsInline
+                                autoPlay
+                            />
+                        ) : (
+                            <video
+                                className={previewAsset.video.className}
+                                src={previewAsset.video.vidSrc}
+                                muted
+                                loop
+                                playsInline
+                            />
+                        )}
                     </div>
                 )}
 

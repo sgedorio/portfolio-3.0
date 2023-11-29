@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
+// import { Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import About from './pages/About';
 import Play from './pages/Play';
 import Work from './pages/Work';
@@ -10,6 +11,8 @@ import SupplyMe from './pages/SupplyMe';
 import EightBallZines from './pages/8BallZines';
 import Sidebar from './components/Sidebar';
 import './App.css';
+import ScrollToTop from "./components/scrollToTop";
+
 
 import burger from './img/burger.svg';
 
@@ -52,6 +55,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
           <Sidebar isSidebarVisible={isSidebarVisible} isToggled={isToggled} toggleSidebar={toggleSidebar} />
           {!isSidebarVisible 
