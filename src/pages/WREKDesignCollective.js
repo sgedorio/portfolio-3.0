@@ -41,8 +41,13 @@ import misc1 from "../img/tshirtfall2018-transparent.png"
 import misc2 from "../img/wdc/misc2.mp4"
 import misc3 from "../img/wdc/misc3.png"
 import misc4 from "../img/wdc/misc4.jpeg"
+import ReactGA from 'react-ga';
 
 export default function WREKDesignCollective() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
+
     return (
         <div className="wdc case-study">
             <div className="row row-1">

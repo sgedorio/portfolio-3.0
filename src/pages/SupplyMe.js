@@ -30,8 +30,13 @@ import barterPrototype from "../img/sm/sm-barter.mp4"
 import wishlistPrototype from "../img/sm/sm-wishlist.mp4"
 import parentPrototype from "../img/sm/sm-parent.mp4"
 import addPrototype from "../img/list-item.mp4"
+import ReactGA from 'react-ga';
 
 export default function SupplyMe() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
+
     return (
         <div className="sm case-study">
              <div className="row row-1">
