@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cover from "../img/wdc/cover.png";
 import collegeRadio1 from "../img/wdc/collegeRadio1.png"
 import collegeRadio2 from "../img/wdc/collegeRadio2.png"

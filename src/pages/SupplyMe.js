@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Mockup from '../components/Mockup';
 // import splashScreen from "../img/ms-onboarding/splash.mp4"
 import userFocus from "../img/sm/userdomain.png"

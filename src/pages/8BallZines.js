@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import vCollage1 from '../img/collage1.png'
 import vCollage2 from '../img/collage2.png'
 import vCollage3 from '../img/collage3.png'
@@ -9,7 +9,7 @@ export default function EightBallZines() {
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
-    
+
     return (
         <div className="eight-ball-zines case-study">
             <div className="row row-1">

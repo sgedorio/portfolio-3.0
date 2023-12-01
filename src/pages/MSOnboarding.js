@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Mockup from '../components/Mockup';
 import msArtists from '../img/ms-onboarding/ms-artists.png';
 import habitChart from '../img/ms-onboarding/habit.svg';
