@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import cover from "../img/wdc/cover.png";
 import collegeRadio1 from "../img/wdc/collegeRadio1.png"
 import collegeRadio2 from "../img/wdc/collegeRadio2.png"
@@ -41,12 +41,8 @@ import misc1 from "../img/tshirtfall2018-transparent.png"
 import misc2 from "../img/wdc/misc2.mp4"
 import misc3 from "../img/wdc/misc3.png"
 import misc4 from "../img/wdc/misc4.jpeg"
-import ReactGA from 'react-ga';
 
 export default function WREKDesignCollective() {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
 
     return (
         <div className="wdc case-study">

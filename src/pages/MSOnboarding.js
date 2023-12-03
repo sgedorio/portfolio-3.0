@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Mockup from '../components/Mockup';
 import msArtists from '../img/ms-onboarding/ms-artists.png';
 import habitChart from '../img/ms-onboarding/habit.svg';
@@ -43,13 +43,8 @@ import songOTDGif from "../img/ms-onboarding/songOTDGif.gif"
 import artcamp1 from "../img/ms-onboarding/artcamp1_tap.mp4"
 import artcamp2 from "../img/ms-onboarding/artcamp2_tap.mp4"
 import artcamp3 from "../img/ms-onboarding/artcamp3_tap.mp4"
-import ReactGA from 'react-ga';
 
 export default function MSOnboarding() {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
-
     return (
         <div className="ms-onboarding case-study">
             <div className="row row-1">

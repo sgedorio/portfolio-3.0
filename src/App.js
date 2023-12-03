@@ -12,9 +12,17 @@ import EightBallZines from './pages/8BallZines';
 import Sidebar from './components/Sidebar';
 import './App.css';
 import ScrollToTop from "./components/scrollToTop";
-
-
 import burger from './img/burger.svg';
+
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_NO)
+const browserHistory = createBrowserHistory()
+browserHistory.listen((location, action) => {
+  ReactGA.pageview(location.pathname + location.search)
+})
+
 
 function App() {
   const [isSidebarVisible, setSidebarVisibility] = useState(window.innerWidth > 1024);
@@ -27,6 +35,8 @@ function App() {
 
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+
     let prevWindowWidth = window.innerWidth;
 
     const handleResize = () => {
