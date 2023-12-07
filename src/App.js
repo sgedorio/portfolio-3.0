@@ -33,7 +33,6 @@ function App() {
     setToggled(!isToggled);
   };
 
-
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
 

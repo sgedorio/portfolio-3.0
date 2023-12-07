@@ -501,6 +501,13 @@
 
 /* Responsive layouts */
 
+@media screen and (max-width: 1160px) {
+  .row {
+    grid-template-columns: 360px minmax(300px, 400px);
+    column-gap: 40px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   /* General layout */
