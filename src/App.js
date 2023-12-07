@@ -17,7 +17,7 @@ import burger from './img/burger.svg';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_NO)
+ReactGA.initialize("G-Y24V0SMTW8")
 const browserHistory = createBrowserHistory()
 browserHistory.listen((location, action) => {
   ReactGA.pageview(location.pathname + location.search)
