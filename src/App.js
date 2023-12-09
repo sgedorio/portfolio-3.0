@@ -21,6 +21,7 @@ ReactGA.initialize("G-Y24V0SMTW8")
 const browserHistory = createBrowserHistory()
 browserHistory.listen((location, action) => {
   ReactGA.pageview(location.pathname + location.search)
+  console.log(location.pathname)
 })
 
 
@@ -63,7 +64,7 @@ function App() {
   }, [isSidebarVisible, isToggled]);
 
   return (
-    <Router>
+    <Router history={browserHistory}>
       <ScrollToTop />
       <div className="App">
           <Sidebar isSidebarVisible={isSidebarVisible} isToggled={isToggled} toggleSidebar={toggleSidebar} />
