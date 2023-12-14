@@ -124,29 +124,31 @@ export default function Preview(props) {
                     </div>
                 )}
             </Link>
-            <h2>{props.item.title}</h2>
-            <div className="divider"></div>
+            <div className="title-divider">
+                <h2>{props.item.title}</h2>
+                <div className="divider"></div>
+            </div>
             <div className="preview-caption">
-                <div className="preview-caption-overview">
+                <div className="preview-caption-section">
                     <h3>Overview</h3>
                     <p>{props.item.overview}</p>
                 </div>
 
                 {props.item.role && (
-                <div className="preview-caption-role">
-                    <h3>Role</h3>
+                <div className="preview-caption-section">
+                <h3>Role</h3>
                     <p>{props.item.role}</p>
                 </div>)}
                 
                 {props.item.skills && (
-                <div className="preview-caption-skills">
-                    <h3>Skills</h3>
+                <div className="preview-caption-section">
+                <h3>Skills</h3>
                     <p>{props.item.skills.split(', ').join('\n')}</p>
                 </div>)}
 
                 {props.item.tools && (
-                <div className="preview-caption-tools">
-                    <h3>Tools</h3>
+                <div className="preview-caption-section">
+                <h3>Tools</h3>
                     <p>{props.item.tools.split(', ').join('\n')}</p>
                 </div>)}
             </div>

@@ -23,7 +23,7 @@ export default function Sidebar({ isSidebarVisible, isToggled, toggleSidebar }) 
             <div className="nav-container">
                 <nav>
                     <ul>
-                        {/* <li><NavLink to="/about" onClick={handleLinkClick}>About</NavLink></li> */}
+                        <li><NavLink to="/about" onClick={handleLinkClick}>About</NavLink></li>
                         <li><NavLink to="/work" onClick={handleLinkClick}>Work</NavLink></li>
                         <li><NavLink to="/play" onClick={handleLinkClick}>Play</NavLink></li>
                     </ul>

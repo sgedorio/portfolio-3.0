@@ -35,6 +35,12 @@
     background: linear-gradient(245deg, #314321 -321.85%, rgba(241, 241, 241, 0.00) 80.73%);
 }
 
+.title-divider {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .divider {
     margin: 0;
     width: 100%;
@@ -63,7 +69,7 @@
     margin: 0;
 }
 
-.preview-caption-overview, .preview-caption-role, .preview-caption-tools, .preview-caption-skills {
+.preview-caption-section {
     width: 100%;
     display: flex;
     justify-content: space-between;

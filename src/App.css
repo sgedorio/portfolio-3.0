@@ -14,9 +14,31 @@
   row-gap: 80px;
 }
 
+/* About */
+
+.about .right > h2 {
+  width: 376px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-info--item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-info--item--content {
+  width: 56%;
+}
+
+
 /* General case study layout */
 
-.case-study {
+.case-study, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -524,6 +546,10 @@
   .row-1 > .right {
     margin-top: 80px;
   }
+
+  /* .about .row-1 > .right {
+
+  } */
 
   .ms-onboarding .row-13 > .right, 
   .sm .row-5 .right {

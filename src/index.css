@@ -98,7 +98,7 @@ p {
   color: #314321;
 }
 
-.preview-caption p, .case-study p, li {
+.preview-caption p, .case-study p, li, .about p {
   font-family: Marfa-Light;
   /* font-family: pragmatica, sans-serif; */
   font-style: normal;
