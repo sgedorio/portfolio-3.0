@@ -547,10 +547,6 @@
     margin-top: 80px;
   }
 
-  /* .about .row-1 > .right {
-
-  } */
-
   .ms-onboarding .row-13 > .right, 
   .sm .row-5 .right {
     margin-top: 272px;
@@ -606,11 +602,16 @@
   width: 100%;
 }
 
-  .preview-layout {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* column-gap: 40px; */
-    row-gap: 80px;
-  }
+.about .row-1 .right h2 {
+  width: 100%;
+}
+
+.preview-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* column-gap: 40px; */
+  row-gap: 80px;
+}
+
 }
