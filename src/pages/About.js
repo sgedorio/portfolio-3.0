@@ -1,9 +1,5 @@
 import React from 'react';
 import spelunk from "../img/spelunk.png";
-// import Mockup from '../components/Mockup';
-// import test from '../img/test.png';
-// import vidTest from '../img/vidTest.mp4'
-
 
 export default function About() {
     return (
@@ -47,7 +43,8 @@ export default function About() {
                             <div className="section-info--item">
                                 <h3>Hobbies</h3>
                                 <div className="section-info--item--content">
-                                    <p className="first-p--0">In my free time, I like to garden, watch films, go to shows, and try new recipes.</p>
+                                    <p className="first-p--0">Outside of design, I like to garden, watch films, go to shows, and try new recipes.</p>
+                                    <p>I've been coding for fun again recently and completing more React projects on the side, such as this website.</p>
                                 </div>
                             </div>
                         </div>
