@@ -10,8 +10,8 @@
 .preview-image {
     position: relative;
     width: 100%; /* change later, depends on desktop width */
-    /* aspect-ratio: 4/3; */
-    aspect-ratio: 1/1;
+    aspect-ratio: 3.25/3; /* Playing around with this, to show continuity */
+    /* aspect-ratio: 1/1; */
     border-radius: 0 4.28% 4.28% 4.28%;
     border: 0.5px solid #DADADA;
     /* background: linear-gradient(245deg, #314321 -321.85%, rgba(241, 241, 241, 0.00) 80.73%); */

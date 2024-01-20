@@ -75,8 +75,8 @@ nav a {
 }
 
 nav a:not(.active) {
-    opacity: 0.6;
-    filter: blur(1px);
+    opacity: 0.4;
+    /* filter: blur(1px); */
     transition: opacity ease-in-out 0.3s, filter ease-in-out 0.3s;
 }
 

@@ -18,7 +18,7 @@ export default function Sidebar({ isSidebarVisible, isToggled, toggleSidebar }) 
         <aside className={isSidebarVisible ? 'sidebar--visible' : 'sidebar--hidden'}>
             <div className={`name-container ${isToggled ? "with-img" : ""}`}>
                 {isToggled && <img onClick={toggleSidebar} src={close} alt="close"></img>}
-                <p>Sean Gedorio</p>
+                <p className="bold">Sean Gedorio</p>
             </div>
             <div className="nav-container">
                 <nav>

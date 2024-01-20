@@ -4,8 +4,8 @@ import msArtists from '../img/ms-onboarding/ms-artists.png';
 import habitChart from '../img/ms-onboarding/habit.svg';
 import onboardingDefinition from "../img/ms-onboarding/onboarding-definition.svg";
 import boba from "../img/ms-onboarding/boba.png";
-import oldWaitlist from "../img/ms-onboarding/old-waitlist.svg";
-import newWaitlist from "../img/ms-onboarding/new-waitlist.svg";
+import oldWaitlist from "../img/ms-onboarding/old-waitlist-2.svg";
+import newWaitlist from "../img/ms-onboarding/new-waitlist-2.svg";
 import oldRegistration from "../img/ms-onboarding/old-registration-2.svg";
 import problem1 from "../img/ms-onboarding/problem1.svg";
 import solution1 from "../img/ms-onboarding/solution1.svg";
@@ -58,6 +58,7 @@ export default function MSOnboarding() {
                         <Mockup videoScreen={splashScreen} className="second" autoPlay={true}/>
                         <Mockup videoScreen={whatCatches} className="third" autoPlay={true}/>
                     </div>
+                    {/* <p className="img-label first-p">Test</p> */}
                     <div className="summary">
                         <div className="overview">
                             <h3>Overview</h3>
