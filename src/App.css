@@ -220,6 +220,18 @@
   margin-bottom: 48px;
 }
 
+.registration-difference__container {
+  position: relative;
+}
+
+.registration-difference__container > .arrow {
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .registration-difference {
   display: grid;
   grid-template-columns: 1fr 1fr;

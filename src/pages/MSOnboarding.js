@@ -18,6 +18,7 @@ import rSolution2 from "../img/ms-onboarding/r-solution2.svg";
 import rSolution3 from "../img/ms-onboarding/r-solution3.svg";
 import artcampStoryboard from "../img/ms-onboarding/artcamp-storyboard.png"
 import onboardingDefinitionProblems from "../img/ms-onboarding/onboarding-definition-problems.svg"
+import arrowChange from "../img/ms-onboarding/arrow-change.svg"
 
 //mockups
 import collecting from "../img/ms-onboarding/collect.mp4"
@@ -188,38 +189,41 @@ export default function MSOnboarding() {
             <div className="row row-9">
                 <div className="left"></div>
                 <div className="right">
-                    <div className="registration-difference">
-                        <div className="registration-problem">
-                            <div className="registration-problem__header">
-                                <img src={problem1} alt="problem1" />
-                                <h2>Ambiguous options in home screen</h2>
+                    <div className="registration-difference__container">
+                        <div className="registration-difference">
+                            <div className="registration-problem">
+                                <div className="registration-problem__header">
+                                    <img src={problem1} alt="problem1" />
+                                    <h2>Ambiguous options in home screen</h2>
+                                </div>
+                                <div className="registration-difference__content">
+                                    <p>The “Get started” button is too ambiguous and vague, especially when it is paired with a “Login” button. What’s confusing is that it serves 2 different functions:</p>
+                                    <ol>
+                                        <li>Signs up new users for the waitlist</li>
+                                        <li>Goes through the registration flow (but only for users who don’t have a pre-registered account)</li>
+                                    </ol>
+                                    <p>Point #2 is especially confusing; some whitelisted users may go back to the app and not know if they should press “Login” or “Get started” again. Users shouldn’t “get started” twice. Also, if they had already pre-registered an account, they have to select “Login” and not “Get started” which is unintuitive.</p>
+                                    {/* <Mockup staticScreen={sample}/> */}
+                                </div>
                             </div>
-                            <div className="registration-difference__content">
-                                <p>The “Get started” button is too ambiguous and vague, especially when it is paired with a “Login” button. What’s confusing is that it serves 2 different functions:</p>
-                                <ol>
-                                    <li>Signs up new users for the waitlist</li>
-                                    <li>Goes through the registration flow (but only for users who don’t have a pre-registered account)</li>
-                                </ol>
-                                <p>Point #2 is especially confusing; some whitelisted users may go back to the app and not know if they should press “Login” or “Get started” again. Users shouldn’t “get started” twice. Also, if they had already pre-registered an account, they have to select “Login” and not “Get started” which is unintuitive.</p>
-                                {/* <Mockup staticScreen={sample}/> */}
+                            <div className="registration-solution">
+                                <div className="registration-solution__header">
+                                    <img src={solution1} alt="solution1" />
+                                    <h2>Single phone input</h2>
+                                </div>
+                                <div className="registration-difference__content">
+                                    <p>We can reduce option fatigue by simply getting rid of the “Login” and “Registration” buttons in the home screen and replacing it with a single phone input. We do all the work for the users in the background without them having to worry about which button to press.</p>
+                                    {/* <Mockup staticScreen={sample}/> */}
+                                </div>
+                            </div>
+                            <div className="registration-problem__mockup">
+                                <Mockup videoScreen={problem1_mockup} autoPlay={true}/>
+                            </div>
+                            <div className="registration-solution__mockup">
+                                <Mockup videoScreen={solution1_mockup} autoPlay={true} />
                             </div>
                         </div>
-                        <div className="registration-solution">
-                            <div className="registration-solution__header">
-                                <img src={solution1} alt="solution1" />
-                                <h2>Single phone input</h2>
-                            </div>
-                            <div className="registration-difference__content">
-                                <p>We can reduce option fatigue by simply getting rid of the “Login” and “Registration” buttons in the home screen and replacing it with a single phone input. We do all the work for the users in the background without them having to worry about which button to press.</p>
-                                {/* <Mockup staticScreen={sample}/> */}
-                            </div>
-                        </div>
-                        <div className="registration-problem__mockup">
-                            <Mockup videoScreen={problem1_mockup} autoPlay={true}/>
-                        </div>
-                        <div className="registration-solution__mockup">
-                            <Mockup videoScreen={solution1_mockup} autoPlay={true} />
-                        </div>
+                        <img src={arrowChange} className="arrow" alt="arrow" />
                     </div>
                     <p className="img-label">Example of problem #1 with its corresponding solution</p>
                 </div>
