@@ -63,7 +63,8 @@ export default function MSOnboarding() {
                     <div className="summary">
                         <div className="overview">
                             <h3>Overview</h3>
-                            <p>First impressions mean everything; the new user onboarding experience is critical for any early-stage product. Inspired by video games, the onboarding experience underwent several iterations to explain the core parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the animations and microinteractions was set to create a delightful yet luxurious experience.</p>
+                            {/* <p>First impressions mean everything; the new user onboarding experience is critical for any early-stage product. Inspired by video games, the onboarding experience underwent several iterations to explain the core parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the animations and microinteractions was set to create a delightful yet luxurious experience.</p> */}
+                            <p>The new user onboarding experience is critical for any early-stage product. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the microinteractions was set to create a delightful yet luxurious experience.</p>
                         </div>
                         <div className="contributions">
                             <h3>Contributions</h3>
@@ -92,7 +93,7 @@ export default function MSOnboarding() {
                     <p>This comes with a built-in business model that actually supports artists. <a href="https://ra.co/news/77429">Marine Snow artists are paid the equivalent of $500,000 US Spotify streams upfront.</a></p>
                 </div>
                 <div className="right">
-                    <img className="round-img" src={msArtists} alt="ms-artists" />
+                    <img className="round-img" src={msArtists} alt="ms-artists" loading="eager"/>
                 </div>
             </div>
 
@@ -230,7 +231,7 @@ export default function MSOnboarding() {
             </div>
 
             <div className="img-label-container row-10">
-                <img src={newRegistration} alt="new-registration" />
+                <img src={newRegistration} alt="new-registration" loading="eager"/>
                 <p className="img-label">New Registration flow, with 5 new solutions</p>
             </div>
 

@@ -39,15 +39,15 @@ export default function EightBallZines() {
 
             <div className="row-3">
                 <div className="img-label-container">
-                    <img src={vCollage1} alt="seans-volcano-koleksyon" />
+                    <img src={vCollage1} alt="seans-volcano-koleksyon" loading="lazy"/>
                     <p className="img-label">Sean's Volcano Koleksyon</p>
                 </div>
                 <div className="img-label-container">
-                    <img src={vCollage2} alt="harvesting-my-cloud-of-dust" />
+                    <img src={vCollage2} alt="harvesting-my-cloud-of-dust" loading="lazy"/>
                     <p className="img-label">Harvesting my cloud of dust</p>
                 </div>
                 <div className="img-label-container">
-                    <img src={vCollage3} alt="touch-the-mountains-so-that-they-smoke" />
+                    <img src={vCollage3} alt="touch-the-mountains-so-that-they-smoke" loading="lazy"/>
                     <p className="img-label">Touch the Mountains so that they smoke</p>
                 </div>
             </div>
@@ -61,7 +61,7 @@ export default function EightBallZines() {
 
             <div className="row-5">
                 <div className="img-label-container">
-                    <img src={chinatown} alt="chinatown" />
+                    <img src={chinatown} alt="chinatown" loading="lazy"/>
                     <p className="img-label">Sean's bday bash in Chinatown</p>
                 </div>
             </div>

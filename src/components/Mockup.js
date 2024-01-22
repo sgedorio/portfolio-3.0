@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Mockup.css';
 import iphone from '../img/iphone.png';
+import loading from '../img/black-loading.svg'
 
 export default function Mockup (props) {
     const videoRef = useRef(null);
@@ -16,16 +17,17 @@ export default function Mockup (props) {
         }
     }, [dataCurrentTime]);
 
+
     const shouldAutoPlay = props.autoPlay || !window.matchMedia('(hover: hover)').matches;
 
     return (
         <div className={`mockup ${props.className ? props.className : ""}`} style={{ width: props.width }}>
-            <img src={iphone} className="iphone" alt="iPhone mockup" />
-            <img src={props.staticScreen} className="screen" alt="screen" />
-            {/* { props.autoPlay
-            ? <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop autoPlay playsInline/>
-            : <video src={props.videoScreen} className="screen" ref={videoRef} data-current-time={props['data-current-time']} muted loop playsInline/>
-            } */}
+            <img src={iphone} className="iphone" alt="iPhone mockup" loading="eager" />
+            {props.staticScreen ? (
+                <img src={props.staticScreen} className="screen" alt="screen" />
+            ) : (
+                <img src={loading} className="screen" alt="Loading..." />
+            )}
             <video
                 src={props.videoScreen}
                 className="screen"
@@ -35,6 +37,7 @@ export default function Mockup (props) {
                 loop
                 playsInline
                 autoPlay={shouldAutoPlay}
+                loading="lazy"
             />
         </div>
     )
