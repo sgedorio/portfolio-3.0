@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Preview.css';
 import Mockup from '../components/Mockup';
@@ -9,6 +9,18 @@ export default function Preview(props) {
     const isMobilePreview = previewAsset.hasOwnProperty('mobile');
     const isImagePreview = previewAsset.hasOwnProperty('image');
     const isVideoPreview = previewAsset.hasOwnProperty('video');
+
+    const [mockupsLoaded, setMockupsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+          setMockupsLoaded(true);
+        }, 200);
+    
+        // Clear the timeout to avoid memory leaks
+        return () => clearTimeout(timeout);
+      }, []);
 
     useEffect(() => {
         const mobilePrototypes = document.querySelectorAll('.mobile-prototypes');
@@ -70,7 +82,8 @@ export default function Preview(props) {
         <div className="preview">
             <Link to={props.item.pageUrl} className={`preview-image ${props.item.className}`}>
                 {isMobilePreview && (
-                    <div className="mobile-prototypes">
+                    // <div className=mobile-prototypes">
+                    <div className={mockupsLoaded ? 'mobile-prototypes mobile-prototypes--loaded' : 'mobile-prototypes'}>
                         {previewAsset.mobile.map((mockup, index) => (
                             <Mockup 
                                 key={index} 

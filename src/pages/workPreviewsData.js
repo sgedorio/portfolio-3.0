@@ -53,24 +53,24 @@ const workPreviewsData = [
                 imageLayers: [
                     [
                         {
-                            imgSrc: require('../img/artcamp-1.png'),
+                            imgSrc: require('../img/artcamp-1-compressed.png'),
                             className: "first",
                             alt: "artcamp1"
                         },
                         {
-                            imgSrc: require('../img/artcamp-2.png'),
+                            imgSrc: require('../img/artcamp-2-compressed.png'),
                             className: "second",
                             alt: "artcamp2"
                         }
                     ],
                     [
                         {  
-                            imgSrc: require('../img/artcamp-1.png'),
+                            imgSrc: require('../img/artcamp-1-compressed.png'),
                             className: "first",
                             alt: "artcamp1"
                         },
                         {
-                            imgSrc: require('../img/artcamp-2.png'),
+                            imgSrc: require('../img/artcamp-2-compressed.png'),
                             className: "second",
                             alt: "artcamp2"
                         }

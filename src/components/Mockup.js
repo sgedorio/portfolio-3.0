@@ -17,7 +17,6 @@ export default function Mockup (props) {
         }
     }, [dataCurrentTime]);
 
-
     const shouldAutoPlay = props.autoPlay || !window.matchMedia('(hover: hover)').matches;
 
     return (
@@ -30,7 +29,7 @@ export default function Mockup (props) {
             )}
             <video
                 src={props.videoScreen}
-                className="screen"
+                className='screen'
                 ref={videoRef}
                 data-current-time={props['data-current-time']}
                 muted

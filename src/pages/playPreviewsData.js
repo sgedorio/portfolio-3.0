@@ -6,7 +6,7 @@ const playPreviewsData = [
         previewAsset: {
             video: {
                 className: "summer-2023",
-                vidSrc: require('../img/summer2023prototype.mp4')
+                vidSrc: require('../img/summer2023prototype-compressed.mp4')
             }
         },
 
@@ -22,7 +22,7 @@ const playPreviewsData = [
                 imageLayers: [
                     [
                         {
-                            imgSrc: require('../img/8ball-preview.png'),
+                            imgSrc: require('../img/8ball-preview-compressed.png'),
                             alt: "8-ball-preview"
                         }
                     ]
