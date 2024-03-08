@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import spelunk from "../img/spelunk.png";
 
 export default function About() {
+    const [imgLoaded, setImgsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+          setImgsLoaded(true);
+        }, 200);
+    
+        // Clear the timeout to avoid memory leaks
+        return () => clearTimeout(timeout);
+      }, []);
+
     return (
         <div className="about">
             <div className="row row-1">
                 <div className="left">
                     <div className="img-label-container">
-                        <img className="round-img" src={spelunk} alt="Sean spelunking" />
+                        <img className={imgLoaded ? "round-img img-loaded" : "round-img"}
+                            src={spelunk} 
+                            alt="Sean spelunking" 
+                        />
                         <p className="img-label last-p--0">Spelunking in Missouri, 2023</p>
                     </div>
                 </div>

@@ -20,6 +20,17 @@
   width: 376px;
 }
 
+.about .round-img {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.img-loaded {
+  opacity: 0.8 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.5s linear, transform 0.5s linear;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -521,7 +532,6 @@
 
 /* 8-Ball-Zines */
 
-
 .eight-ball-zines img {
   width: 100%;
   height: auto;
@@ -532,6 +542,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
 
 /* Responsive layouts */
 

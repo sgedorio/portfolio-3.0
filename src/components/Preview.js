@@ -11,11 +11,13 @@ export default function Preview(props) {
     const isVideoPreview = previewAsset.hasOwnProperty('video');
 
     const [mockupsLoaded, setMockupsLoaded] = useState(false);
+    const [imgLoaded, setImgsLoaded] = useState(false);
 
     useEffect(() => {
         // Simulate loading delay
         const timeout = setTimeout(() => {
           setMockupsLoaded(true);
+          setImgsLoaded(true);
         }, 200);
     
         // Clear the timeout to avoid memory leaks
@@ -97,7 +99,8 @@ export default function Preview(props) {
                 )}
 
                 {isImagePreview && (
-                    <div className="image-prototypes">
+                    // <div className="image-prototypes">
+                    <div className={imgLoaded ? "image-prototypes image-prototypes--loaded" : "image-prototypes"}>
                         {previewAsset.image.imageLayers.map((layer, index) => (
                             <div key={index + 1} className={`layer${index + 1} ${previewAsset.image.className}`}>
                                 {layer.map((image, index) => (
@@ -109,7 +112,8 @@ export default function Preview(props) {
                 )}
 
                 {isVideoPreview && (
-                    <div className="video-prototype">
+                    // <div className="video-prototype">
+                    <div className={imgLoaded ? "video-prototype video-prototype--loaded" : "video-prototype"}>
                         {window.matchMedia("(hover: none)").matches ? (
                             <video
                                 className={previewAsset.video.className}
