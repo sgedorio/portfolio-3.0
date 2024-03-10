@@ -8,16 +8,65 @@
 }
 
 .preview-image {
+    --border-width: 1px;
+    --radius: 24px;
     position: relative;
     width: 100%; /* change later, depends on desktop width */
     aspect-ratio: 3.25/3; /* Playing around with this, to show continuity */
     /* aspect-ratio: 1/1; */
-    border-radius: 0 4.28% 4.28% 4.28%;
-    border: 0.5px solid #DADADA;
+    /* border-radius: 0 4.28% 4.28% 4.28%; */
+    border-radius: var(--radius);
+    border: var(--border-width) solid transparent;
     /* background: linear-gradient(245deg, #314321 -321.85%, rgba(241, 241, 241, 0.00) 80.73%); */
-    background: linear-gradient(245deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 88.73%);
-    overflow: hidden;
+    /* background: linear-gradient(245deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 88.73%); */
+    /* overflow: hidden; */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    isolation: isolate;
 }
+
+.preview-image::before {
+    /* content: " ";
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    z-index: -1;
+    border: inherit;
+    border-radius: inherit;
+    background-image: conic-gradient(from var(--angle), #381D6A 80%, #E0D1FF 88%, #E0D1FF 92%, #381D6A 100%);
+    background-origin: border-box;
+    -webkit-mask:
+        linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+    mask: linear-gradient(black, black),
+        linear-gradient(black, black);
+    -webkit-mask-clip: content-box, border-box;
+    mask-clip: content-box, border-box;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin 3s linear infinite; */
+}
+
+/* @supports not (background: paint(something)) {
+    .preview-image::before {
+      background-image: conic-gradient(#381D6A 80%, #E0D1FF 88%, #E0D1FF 92%, #381D6A 100%);
+    }
+}
+
+.preview-image:hover::before {
+    animation-play-state: paused;
+}
+  
+@property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+@keyframes spin {
+    to {
+      --angle: 1turn;
+    }
+  } */
+
 
 .preview-image.ms-onboarding-preview {
     background: linear-gradient(245deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 68.73%);
