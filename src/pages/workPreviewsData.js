@@ -53,30 +53,42 @@ const workPreviewsData = [
                 imageLayers: [
                     [
                         {
-                            imgSrc: require('../img/artcamp-1-compressed.png'),
-                            className: "first",
-                            alt: "artcamp1"
-                        },
-                        {
-                            imgSrc: require('../img/artcamp-2-compressed.png'),
-                            className: "second",
-                            alt: "artcamp2"
-                        }
-                    ],
-                    [
-                        {  
-                            imgSrc: require('../img/artcamp-1-compressed.png'),
-                            className: "first",
-                            alt: "artcamp1"
-                        },
-                        {
-                            imgSrc: require('../img/artcamp-2-compressed.png'),
-                            className: "second",
-                            alt: "artcamp2"
+                            imgSrc: require('../img/artcamp-combined.png'),
+                            className: "",
+                            alt: "artcamp"
                         }
                     ]
                 ]
             }
+            // image: {
+            //     className: "artcamp",
+            //     imageLayers: [
+            //         [
+            //             {
+            //                 imgSrc: require('../img/artcamp-1-compressed.png'),
+            //                 className: "first",
+            //                 alt: "artcamp1"
+            //             },
+            //             {
+            //                 imgSrc: require('../img/artcamp-2-compressed.png'),
+            //                 className: "second",
+            //                 alt: "artcamp2"
+            //             }
+            //         ],
+            //         [
+            //             {  
+            //                 imgSrc: require('../img/artcamp-1-compressed.png'),
+            //                 className: "first",
+            //                 alt: "artcamp1"
+            //             },
+            //             {
+            //                 imgSrc: require('../img/artcamp-2-compressed.png'),
+            //                 className: "second",
+            //                 alt: "artcamp2"
+            //             }
+            //         ]
+            //     ]
+            // }
         },
         overview: "A cinematic opening sequence users see when they first download the Marine Snow app, featuring the 2 divers in the Marine Snow logo uncovering hidden and obscure gems in the deep sea. This short film was designed to prime users with the deep sea aesthetics surrounding the Marine Snow brand and create a feeling of collective adventure.",
         role: "Creative Director",

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Preview.css';
 import Mockup from '../components/Mockup';
+import lockIcon from '../img/lock-icon.svg';
 
 export default function Preview(props) {
     //checks type of previewAsset
@@ -27,10 +28,12 @@ export default function Preview(props) {
     useEffect(() => {
         const mobilePrototypes = document.querySelectorAll('.mobile-prototypes');
         const videoPrototypes = document.querySelectorAll('.video-prototype');
+        const previewContainer = document.querySelectorAll('.preview-image-container');
       
         const handleMouseEnter = (event) => {
             const target = event.target;
             const videos = target.getElementsByTagName('video');
+            console.log(videos);
             Array.from(videos).forEach(video => {
                 if (video.paused) {
                     video.currentTime = 0;
@@ -57,23 +60,13 @@ export default function Preview(props) {
             });
         };
 
-        videoPrototypes.forEach(element => {
+        previewContainer.forEach(element => {
             element.addEventListener('mouseenter', handleMouseEnter);
             element.addEventListener('mouseleave', handleMouseLeave);
         });
       
-        mobilePrototypes.forEach(element => {
-          element.addEventListener('mouseenter', handleMouseEnter);
-          element.addEventListener('mouseleave', handleMouseLeave);
-        });
-      
         return () => {
-            videoPrototypes.forEach(element => {
-                element.removeEventListener('mouseenter', handleMouseEnter);
-                element.removeEventListener('mouseleave', handleMouseLeave);
-            });
-
-            mobilePrototypes.forEach(element => {
+            previewContainer.forEach(element => {
                 element.removeEventListener('mouseenter', handleMouseEnter);
                 element.removeEventListener('mouseleave', handleMouseLeave);
             });
@@ -82,6 +75,7 @@ export default function Preview(props) {
 
     return (
         <div className="preview">
+            <span className="preview-image-container">
             <Link to={props.item.pageUrl} className={`preview-image ${props.item.className}`}>
                 {isMobilePreview && (
                     // <div className=mobile-prototypes">
@@ -137,10 +131,12 @@ export default function Preview(props) {
 
                 {props.item.inProgress && (
                     <div className="in-progress">
+                        <img src={lockIcon} alt="lock-icon" />
                         <h3>In Progress</h3>
                     </div>
                 )}
             </Link>
+            </span>
             <div className="title-divider">
                 <h2>{props.item.title}</h2>
                 <div className="divider"></div>
