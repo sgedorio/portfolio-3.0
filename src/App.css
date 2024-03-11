@@ -20,13 +20,14 @@
   width: 376px;
 }
 
-.about .round-img {
+.about .img-label-container {
+  width: 100%;
   opacity: 0;
   transform: translateY(12px);
 }
 
-.img-loaded {
-  opacity: 0.8 !important;
+.img-label-container-loaded {
+  opacity: 1 !important;
   transform: translateY(0) !important;
   transition: opacity 0.5s linear, transform 0.5s linear;
 }

@@ -18,13 +18,13 @@ export default function About() {
         <div className="about">
             <div className="row row-1">
                 <div className="left">
-                    <div className="img-label-container">
-                        <img className={imgLoaded ? "round-img img-loaded" : "round-img"}
+                    <div className={imgLoaded ? "img-label-container img-label-container-loaded" : "img-label-container"}>
+                        <img className="round-img"
                             src={spelunk} 
                             alt="Sean spelunking" 
                         />
                         <p className="img-label last-p--0">Spelunking in Missouri, 2023</p>
-                    </div>
+                    </div> 
                 </div>
                 <div className="right">
                     <h2>I’m Sean, an interface designer and developer. I have a knack for solving problems & elevating a product's visual and interactive details.</h2>

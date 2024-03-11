@@ -33,7 +33,6 @@ export default function Preview(props) {
         const handleMouseEnter = (event) => {
             const target = event.target;
             const videos = target.getElementsByTagName('video');
-            console.log(videos);
             Array.from(videos).forEach(video => {
                 if (video.paused) {
                     video.currentTime = 0;
