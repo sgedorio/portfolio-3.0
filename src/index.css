@@ -72,12 +72,12 @@ h2 {
   letter-spacing: -1.5px;
 }
 
-h3 {
+/* h3 {
   font-family: MarfaMono-Regular;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -1.25px;
-}
+} */
 
 p { 
   font-family: MarfaMono-Regular;
@@ -86,13 +86,13 @@ p {
   letter-spacing: -1.25px;
 }
 
-.nav-container li, .nav-container p, .in-progress p {
+/* h3, .nav-container li, .nav-container p, .in-progress p {
   font-family: MarfaMono-Light;
   font-size: 12px;
-  line-height: 0px; /* 0% */
+  line-height: 0px; 
   line-height: 12.8px;
   letter-spacing: -1.25px;
-}
+} */
 
 .nav-container a {
   color: #314321;
@@ -106,6 +106,23 @@ p {
   font-size: 12px;
   line-height: 14px; /* 116.667% */
   letter-spacing: -0.5px;
+}
+
+.nav-container li, .nav-container p, .in-progress p {
+  font-family: MarfaMono-Light;
+  font-size: 12px;
+  line-height: 0px; /* 0% */
+  line-height: 12.8px;
+  letter-spacing: -1.25px;
+}
+
+h3 {
+  font-weight: normal;
+  font-family: MarfaMono-Semibold;
+  font-size: 12px;
+  line-height: 0px; /* 0% */
+  line-height: 14px;
+  letter-spacing: -1.25px;
 }
 
 .bold {
