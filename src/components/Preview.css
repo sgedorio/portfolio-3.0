@@ -8,6 +8,7 @@
 }
 
 .preview-image-container {
+    z-index: 999;
     --border-width: 0.5px;
     --radius: 4.28%;
     position: relative;
@@ -229,9 +230,9 @@
 
 /* MS Social - note, the 19px value was determined through trial-and-error since the translateZ affected the X position as well  */
 
-.preview-image-container:hover .ms-social-preview {
-    cursor: default;
-}
+/* .preview-image-container:hover .ms-social-preview {
+    cursor: default !important;
+} */
 
 .ms-social-preview .mobile-prototypes .first {
     z-index: 2;
