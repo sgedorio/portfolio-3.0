@@ -58,14 +58,14 @@
 }
 
 .right .mockup {
-  width: 30%;
+  width: 32%;
   opacity: 0.8;
 }
 
 .row {
   display: grid;
   grid-template-columns: 360px minmax(400px, 800px);
-  column-gap: 128px;
+  column-gap: 104px;
   /* column-gap: 16%; */
 }
 
@@ -104,6 +104,7 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
+  flex: 1;
 }
 
 .row-1 > .left {
@@ -196,9 +197,9 @@
   width: 80%;
 }
 
-.ms-onboarding .row-3 .right .mockup {
+/* .ms-onboarding .row-3 .right .mockup {
   width: 40%; 
-}
+} */
 
 .ms-onboarding .row-4 img {
   width: 100%;

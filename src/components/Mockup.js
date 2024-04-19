@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Mockup.css';
 import iphone from '../img/iphone.png';
 import loading from '../img/black-loading.svg'

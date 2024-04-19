@@ -26,8 +26,8 @@ export default function Preview(props) {
       }, []);
 
     useEffect(() => {
-        const mobilePrototypes = document.querySelectorAll('.mobile-prototypes');
-        const videoPrototypes = document.querySelectorAll('.video-prototype');
+        // const mobilePrototypes = document.querySelectorAll('.mobile-prototypes');
+        // const videoPrototypes = document.querySelectorAll('.video-prototype');
         const previewContainer = document.querySelectorAll('.preview-image-container');
       
         const handleMouseEnter = (event) => {

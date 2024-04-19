@@ -142,9 +142,9 @@ export default function MSOnboarding() {
                     </ol>
                     <p>Even though the pearls are chewy, they add to the delicious experience.  In the same vein, intentional friction is useful if it can get users to better understand the value of a product.</p>
                     <p className="last-p">It’s important that the friction added is yummy, chewy tapioca pearls, and not hard, tough pebbles.</p>
-                    <img className="round-img" src={boba} alt="boba"/>
                 </div>
                 <div className="right">
+                    <img className="round-img" src={boba} alt="boba"/>
                 </div>
             </div>
 
@@ -409,22 +409,28 @@ export default function MSOnboarding() {
                     <p>While design was busy pushing Figma prototypes, we had business interns from NYU reach out to users to gather qualitative feedback on how users perceived the app when first using it and why dormant users churned.</p>
                     <p>I learned how to use Mixpanel to identify possible bottlenecks in the new user funnel and to continuously check whether our features were driving towards our goal of users collecting at least a song each week.</p>
                 </div>
-                <div className="right"></div>
-            </div>
-
-            <div className="row row-17">
-                <div className="left">
-                    <h2>Next steps & reflection</h2>
+                <div className="right">
+                <h2>Next steps & reflection</h2>
                     <p className="first-p">The data highlights that there's room for further refinement in the user learning/exploration and overall product experience. While the increase in users collecting songs was small, conversion rates did significantly increase for users who successfully registered after getting off the waitlist. Streamlining the waitlist, login, and registration flows had a positive impact on the product.</p>
                     <p>To truly build habits out of these key actions, it’s critical that we commit to pushing features that actually work on long-term engagement rather than just great first impressions.</p>
                     <p>This means experimenting more to figure out how to properly reward users with songs at a rate that keeps them coming back on a weekly basis. Expanding Collection to be a more practical tool that acts a social signifier is another way to incentivize users to collect songs more.</p>
                     <p>In the early-stage startup world where the Product team is eternally scrambling to find some semblance of product-market fit, it’s easy to get lost in the world of pushing as many features as quickly as possible without meaningfully assessing whether these solutions addressed the underlying problems.</p>
-                    <p>The main lesson I learned from all of this is that it’s important to have a process in place to constantly reflect on feature impact and the bigger picture. This could be as simple as booking a Retro day in your calendar a month or two after a feature is shipped to check on how users are responding to it.</p>
-                </div>
-                <div className="right">
-                    <img src={onboardingDefinitionProblems} alt="onboardingDefinitionProblems" />
+                    <p className="last-p--48">The main lesson I learned from all of this is that it’s important to have a process in place to constantly reflect on feature impact and the bigger picture. This could be as simple as booking a Retro day in your calendar a month or two after a feature is shipped to check on how users are responding to it.</p>
+                    
+                    <div className="img-label-container">
+                        <img src={onboardingDefinitionProblems} alt="onboardingDefinitionProblems" />
+                        <p className="img-label">The core gamified experience of the app needs to be evolved for the next iteration.</p>
+                    </div>
                 </div>
             </div>
+
+            {/* <div className="row row-17">
+                <div className="left">
+                    
+                </div>
+                <div className="right">
+                </div>
+            </div> */}
             
         </div>
     )

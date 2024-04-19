@@ -89,6 +89,7 @@ function App() {
           : <div className="toggle-overlay hidden"/> }
       </div>
       <Analytics />
+      <SpeedInsights />
     </Router>
   );
 }
