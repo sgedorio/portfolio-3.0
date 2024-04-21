@@ -262,7 +262,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 0 24px 24px 24px;
-  box-shadow: 0 0 24px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.12);
 }
 
 .texture {
@@ -552,7 +552,7 @@
 
 .sm .row-0 {
   background: linear-gradient(180deg, #889AFF 0%, #707CFF 37%, #F2F4FF 100%);
-  box-shadow: 0 0 24px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.12);
 }
 
 .sm .row-0--loaded  {
@@ -723,13 +723,19 @@
   .sm .row-9 .right,
   .sm .row-10 .right,
   .sm .row-12 .right,
-
+  .wdc .row-1 .right,
   .wdc .row-2 .right,
   .wdc .row-3 .right, 
   .wdc .row-4 .right,
   .wdc .row-5 .right,
-  .wdc .row-6 .right {
+  .wdc .row-6 .right,
+  .eight-ball-zines .row-1 .right {
     margin-top: 24px;
+  }
+
+  .wdc .row-1 .left,
+  .eight-ball-zines .row-1 .left {
+    width: 100%;
   }
 
   .eight-ball-zines .row-2 {
