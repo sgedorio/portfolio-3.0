@@ -633,7 +633,14 @@
   width: 100%;
   height: 100%;
   display: flex;
+}
 
+.wdc .row-1 .right {
+  gap: 24px;
+}
+
+.wdc .summary {
+  margin-top: 0 !important;
 }
 
 .wdc .right:not(.row-1 .right) {
@@ -658,6 +665,14 @@
 .eight-ball-zines img {
   width: 100%;
   height: auto;
+}
+
+.eight-ball-zines .row-1 .right {
+  gap: 24px;
+}
+
+.eight-ball-zines .summary {
+  margin-top: 0 !important;
 }
 
 .eight-ball-zines .row-3 {

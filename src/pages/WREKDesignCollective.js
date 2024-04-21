@@ -48,17 +48,22 @@ export default function WREKDesignCollective() {
         <div className="wdc case-study">
             <div className="row row-1">
                 <div className="left">
-                    <h1>WREK Design Collective</h1>
+                    {/* <h1>WREK Design Collective</h1> */}
                     {/* <h2>Members meet on a weekly basis to teach other new skills & share unconventional yet refreshing inspirations.</h2> */}
-                    <h2>An eclectic space for hands-on design learning and experimentation</h2>
+                    {/* <h2>An eclectic space for hands-on design learning and experimentation</h2> */}
+                    <h2>WREK Design Collective is a space I created inside WREK Atlanta 91.1FM as the station's Publicity Director & Design Leader to experiment on print and design.<br/><br/>From self-taught screen printing to zine-making to creative coding, meshing raw DIY ethics with modern software to create wacky works was our goal.</h2>
                 </div>
                 <div className="right">
                     <img className="round-img" src={cover} alt="cover" />
+                    <div className="title-divider">
+                            <h1>Building a creative, eclectic space for hands-on design learning and experimentation</h1>
+                            <div className="divider"></div>
+                    </div>
                     <div className="summary">
-                        <div className="overview">
+                        {/* <div className="overview">
                             <h3>Overview</h3>
                             <p>WREK Design Collective is a space I created inside WREK Atlanta 91.1FM as the station's Publicity Director & Design Leader to experiment on print and design. From self-taught screen printing to zine-making to creative coding, meshing raw DIY ethics with modern software to create wacky works was our goal.</p>
-                        </div>
+                        </div> */}
                         <div className="contributions">
                             <h3>Contributions</h3>
                             <div className="copy">

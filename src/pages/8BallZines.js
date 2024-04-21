@@ -10,17 +10,21 @@ export default function EightBallZines() {
         <div className="eight-ball-zines case-study">
             <div className="row row-1">
                 <div className="left">
-                    <h1>8 Ball Zines</h1>
+                    <h2>A collection of collages I created for 8-Ball zine fairs throughout 2023, featuring volcanoes from the Philippines and random saunters around Manhattan's Chinatown.</h2>
                 </div>
                 <div className="right">
+                <div className="title-divider">
+                            <h1>8-Ball Zines</h1>
+                            <div className="divider"></div>
+                </div>
                 <div className="summary">
-                        <div className="overview">
+                        {/* <div className="overview">
                             <h3>Overview</h3>
                             <p>A collection of collages I created for 8-Ball zine fairs throughout 2023, featuring volcanoes from the Philippines and random saunters around Manhattan's Chinatown.</p>
-                        </div>
+                        </div> */}
                         <div className="tools">
                             <h3>Tools</h3>
-                            <p>Adobe Suite, Python</p>
+                            <p>Adobe Suite<br/>Python</p>
                         </div>
                         <div className="timeline">
                             <h3>Timeline</h3>
