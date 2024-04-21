@@ -18,7 +18,8 @@ const workPreviewsData = [
         },
 
         // overview: "First impressions mean everything; the new user onboarding experience is critical for any early-stage product. Inspired by video games, the onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the animations and microinteractions was set to create a delightful yet luxurious experience.",
-        overview: "The new user onboarding experience is critical for any early-stage product. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the microinteractions was set to create a delightful yet luxurious experience.",
+        // overview: "The new user onboarding experience is critical for any early-stage product. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the microinteractions was set to create a delightful yet luxurious experience.",
+        overview: "First impressions are critical for early-stage products. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals was set to create a delightful yet luxurious experience.",
         role: "Product Designer",
         skills: "User Research, Mobile Interface Design, Product Growth Strategy, Product Analytics"
     }, 

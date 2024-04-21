@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Mockup from '../components/Mockup';
 // import splashScreen from "../img/ms-onboarding/splash.mp4"
+import coverMock1 from '../img/sm/row0_1.png';
+import coverMock2 from '../img/sm/row0_2.png';
+import coverMock3 from '../img/sm/row0_3.png';
 import userFocus from "../img/sm/userdomain.png"
 import existingSolutions from "../img/sm/existingSolutions.png"
 import digitalObs from "../img/sm/digitalobservations.png"
@@ -24,18 +27,35 @@ import branding from "../img/sm/branding.png"
 import wireframeResearch from "../img/sm/wireframe-research-2.png"
 
 // Mockups
-import splashPrototypeSimple from "../img/sm-logo.mp4"
+// import splashPrototypeSimple from "../img/sm-logo.mp4"
 import splashPrototype from "../img/sm/sm-splash.mp4"
-import barterPrototype from "../img/sm/sm-barter.mp4"
+// import barterPrototype from "../img/sm/sm-barter.mp4"
 import wishlistPrototype from "../img/sm/sm-wishlist.mp4"
 import parentPrototype from "../img/sm/sm-parent.mp4"
-import addPrototype from "../img/list-item.mp4"
+// import addPrototype from "../img/list-item.mp4"
 
 export default function SupplyMe() {
+    const [imgLoaded, setImgsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+          setImgsLoaded(true);
+        }, 200);
+    
+        // Clear the timeout to avoid memory leaks
+        return () => clearTimeout(timeout);
+      }, []);
 
     return (
         <div className="sm case-study">
-             <div className="row row-1">
+             <div className={imgLoaded ? "row-0 row-0--loaded" : "row-0"}>
+                    <img className="one" src={coverMock1} alt="cover1" />
+                    <img className="two" src={coverMock2} alt="cover2" />
+                    <img className="three" src={coverMock3} alt="cover3" />
+                </div>
+
+            {/* <div className="row row-1">
                 <div className="left">
                     <h1>Supply Me</h1>
                     <h2>A school supply bartering app for public school teachers</h2>
@@ -51,6 +71,44 @@ export default function SupplyMe() {
                             <h3>Overview</h3>
                             <p>Supply Me is a school supply trading app that alleviates out-of-pocket expenses made by public school teachers for their students' supplies.</p>
                         </div>
+                        <div className="contributions">
+                            <h3>Contributions</h3>
+                            <div className="copy">
+                                <p>I completed all portions of the high-fidelity prototype alone as a personal project to improve my design skills in Figma.</p>
+                                <p>The research was conducted as a group with Daniella Nieves, Timothy Lai, & May Park. Specifically, I:</p>
+                                <ul>
+                                    <li>Analyzed existing solutions throughout the domain research</li>
+                                    <li>Conducted interviews with Atlanta public school teachers</li>
+                                    <li>Drew the visual storyboard</li>
+                                    <li>Participated in the affinity diagramming session</li>
+                                    <li>Proposed 5 solutions for iterative ideation</li>
+                                </ul>
+                                <p>I recorded all of the prototype animations on this page through OBS/Premiere Pro.</p>
+                            </div>
+                        </div>
+                        <div className="tools">
+                            <h3>Tools</h3>
+                            <p>Figma<br/>Balsamiq<br/>Illustrator</p>
+                        </div>
+                        <div className="timeline">
+                            <h3>Timeline</h3>
+                            <p>This was a group effort from Jan 2019 - Apr 2019 to complete the user research and medium-fidelity prototype. I finished the high-fidelity prototype version as a solo project throughout Nov 2020.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="row row-0-text">
+                <div className="left">
+                    <h2>Supply Me is a school supply trading app that alleviates out-of-pocket expenses made by public school teachers for their students' supplies.</h2>
+
+                </div>
+                <div className="right">
+                    <div className="title-divider">
+                        <h1>Iteratively researching, ideating, and prototyping solutions for K-12 public school teachers</h1>
+                        <div className="divider"></div>
+                    </div>
+                    <div className="summary">
                         <div className="contributions">
                             <h3>Contributions</h3>
                             <div className="copy">

@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Mockup from '../components/Mockup';
+import coverMock1 from '../img/ms-onboarding/row0_1.png';
+import coverMock2 from '../img/ms-onboarding/row0_2.png';
+import coverMock3 from '../img/ms-onboarding/row0_3.png';
+import coverTexture from "../img/ms-onboarding/row0_texture.png";
 import msArtists from '../img/ms-onboarding/ms-artists.png';
 import habitChart from '../img/ms-onboarding/habit.svg';
 import onboardingDefinition from "../img/ms-onboarding/onboarding-definition.svg";
 import boba from "../img/ms-onboarding/boba.png";
-import oldWaitlist from "../img/ms-onboarding/old-waitlist-2.svg";
-import newWaitlist from "../img/ms-onboarding/new-waitlist-2.svg";
-import oldRegistration from "../img/ms-onboarding/old-registration-2.svg";
+import oldWaitlist from "../img/ms-onboarding/old-waitlist-3.svg";
+import newWaitlist from "../img/ms-onboarding/new-waitlist-3.svg";
+import oldRegistration from "../img/ms-onboarding/old-registration-3.svg";
 import problem1 from "../img/ms-onboarding/problem1.svg";
 import solution1 from "../img/ms-onboarding/solution1.svg";
-import newRegistration from "../img/ms-onboarding/new-registration.svg";
+import newRegistration from "../img/ms-onboarding/new-registration-3.svg";
 import rProblem1 from "../img/ms-onboarding/r-problem1.svg";
 import rProblem2 from "../img/ms-onboarding/r-problem2.svg";
 import rProblem3 from "../img/ms-onboarding/r-problem3.svg";
@@ -46,26 +50,42 @@ import artcamp2 from "../img/ms-onboarding/artcamp2_tap.mp4"
 import artcamp3 from "../img/ms-onboarding/artcamp3_tap.mp4"
 
 export default function MSOnboarding() {
+    const [imgLoaded, setImgsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+          setImgsLoaded(true);
+        }, 200);
+    
+        // Clear the timeout to avoid memory leaks
+        return () => clearTimeout(timeout);
+      }, []);
+
+
     return (
         <div className="ms-onboarding case-study">
-            <div className="row row-1">
+            {/* <div className="row row-0"> */}
+            <div className="row-0--container">
+                <div className={imgLoaded ? "row-0 row-0--loaded" : "row-0"}>
+                    <img className="one" src={coverMock1} alt="cover1" />
+                    <img className="two" src={coverMock2} alt="cover2" />
+                    <img className="three" src={coverMock3} alt="cover3" />
+                </div>
+                <img className={imgLoaded ? "texture--loaded texture" : "texture"} src={coverTexture} alt="texture" />
+            </div>
+
+            <div className="row row-0-text">
                 <div className="left">
-                    <h1>Marine Snow, Onboarding</h1>
-                    <h2>Crafting a delightful first-time experience for new users</h2>
+                    <h2>First impressions are critical for early-stage products.<br/><br/>The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload.<br/><br/>A high bar for visuals was set to create a delightful yet luxurious experience.</h2>
+
                 </div>
                 <div className="right">
-                    <div className="mockups">
-                        <Mockup videoScreen={collectContext} className="first" autoPlay={true}/>
-                        <Mockup videoScreen={splashScreen} className="second" autoPlay={true}/>
-                        <Mockup videoScreen={whatCatches} className="third" autoPlay={true}/>
+                    <div className="title-divider">
+                        <h1>Crafting Marine Snow’s simple, intuitive, and delightfully refreshing onboarding & new user experience</h1>
+                        <div className="divider"></div>
                     </div>
-                    {/* <p className="img-label first-p">Test</p> */}
                     <div className="summary">
-                        <div className="overview">
-                            <h3>Overview</h3>
-                            {/* <p>First impressions mean everything; the new user onboarding experience is critical for any early-stage product. Inspired by video games, the onboarding experience underwent several iterations to explain the core parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the animations and microinteractions was set to create a delightful yet luxurious experience.</p> */}
-                            <p>The new user onboarding experience is critical for any early-stage product. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals in the microinteractions was set to create a delightful yet luxurious experience.</p>
-                        </div>
                         <div className="contributions">
                             <h3>Contributions</h3>
                             <div className="copy">
@@ -84,6 +104,7 @@ export default function MSOnboarding() {
                     </div>
                 </div>
             </div>
+
 
             <div className="row row-2">
                 <div className="left">
