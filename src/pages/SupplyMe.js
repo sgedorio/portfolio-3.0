@@ -41,7 +41,7 @@ export default function SupplyMe() {
         // Simulate loading delay
         const timeout = setTimeout(() => {
           setImgsLoaded(true);
-        }, 600);
+        }, 1000);
     
         // Clear the timeout to avoid memory leaks
         return () => clearTimeout(timeout);
