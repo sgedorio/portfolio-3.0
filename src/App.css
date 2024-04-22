@@ -259,6 +259,7 @@
 }
 
 .row-0--container {
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 0 24px 24px 24px;
