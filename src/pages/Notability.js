@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { isSafari } from 'react-device-detect';
 import IPad from '../components/IPad';
 import coverMock1 from '../img/notability/row0_1.png';
 import coverMock2 from '../img/notability/row0_2.png';
@@ -38,7 +39,7 @@ export default function Notability() {
       }, []);
 
     return (
-        <div className="notability case-study">
+        <div className={isSafari ? 'notability case-study safari' : 'notability case-study'}>
             <div className="row-0--container">
                 <div className={imgLoaded ? "row-0 row-0--loaded" : "row-0"}>
                     <img className="three" src={coverMock3} alt="cover3" />
