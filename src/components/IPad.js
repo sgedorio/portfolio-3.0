@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import './Mockup.css';
-import iphone from '../img/iphone.png';
-import loading from '../img/black-loading.svg'
+import ipad from "../img/ipad2.svg";
+import './IPad.css';
+import loading from "../img/ipad-black-loading.svg";
 
-export default function Mockup (props) {
+export default function IPad (props) {
     const videoRef = useRef(null);
     const { 'data-current-time': dataCurrentTime } = props;
 
@@ -20,9 +20,10 @@ export default function Mockup (props) {
     const shouldAutoPlay = props.autoPlay || !window.matchMedia('(hover: hover)').matches;
 
     return (
-        <div className={`mockup ${props.className ? props.className : ""}`} style={{ width: props.width }}>
-            <img src={iphone} className="iphone" alt="iPhone mockup" loading="eager" />
+        <div className={`ipad ${props.className ? props.className : ""}`} style={{ width: props.width }}>
+            <img src={ipad} className="ipad-device" alt="iPad mockup" loading="eager" style={{ width: props.width }}/>
             <img src={loading} className="screen" alt="Loading..." />
+
             {props.staticScreen ? (
                 <img src={props.staticScreen} className="screen" alt="screen" />
                 ) : (
@@ -40,27 +41,6 @@ export default function Mockup (props) {
                     />
                 ) : null
             )}
-
-            {/* {props.staticScreen ? (
-                <img src={props.staticScreen} className="screen" alt="screen" />
-            ) : (
-                <img src={loading} className="screen" alt="Loading..." />
-            )}
-            {props.videoScreen ? (
-                <video
-                src={props.videoScreen}
-                className='screen'
-                ref={videoRef}
-                data-current-time={props['data-current-time']}
-                muted
-                loop
-                playsInline
-                autoPlay={shouldAutoPlay}
-                loading="lazy"
-                />
-            ) : (
-                <img src={loading} className="screen" alt="Loading..." />
-            )} */}
-        </div> 
+        </div>
     )
 }

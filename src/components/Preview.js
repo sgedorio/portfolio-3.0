@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Preview.css';
 import Mockup from '../components/Mockup';
+import IPad from '../components/IPad';
 import lockIcon from '../img/lock-icon.svg';
 
 export default function Preview(props) {
     //checks type of previewAsset
     const previewAsset = props.item.previewAsset;
     const isMobilePreview = previewAsset.hasOwnProperty('mobile');
+    const isIPadPreview = previewAsset.hasOwnProperty('ipad');
     const isImagePreview = previewAsset.hasOwnProperty('image');
     const isVideoPreview = previewAsset.hasOwnProperty('video');
 
@@ -77,7 +79,6 @@ export default function Preview(props) {
             <span className="preview-image-container">
             <Link to={props.item.pageUrl} className={`preview-image ${props.item.className}`}>
                 {isMobilePreview && (
-                    // <div className=mobile-prototypes">
                     <div className={mockupsLoaded ? 'mobile-prototypes mobile-prototypes--loaded' : 'mobile-prototypes'}>
                         {previewAsset.mobile.map((mockup, index) => (
                             <Mockup 
@@ -90,6 +91,20 @@ export default function Preview(props) {
                         ))}
                     </div>
                 )}
+
+                {isIPadPreview && (
+                    <div className={mockupsLoaded ? 'ipad-prototypes ipad-prototypes--loaded' : 'ipad-prototypes'}>
+                        {previewAsset.ipad.map((mockup, index) => (
+                            <IPad 
+                                key={index} 
+                                className={mockup.className} 
+                                videoScreen={mockup.videoScreen} 
+                                staticScreen={mockup.staticScreen}
+                                data-current-time={mockup.currentTime ? mockup.currentTime : null}
+                            />
+                        ))}
+                    </div>
+                )}  
 
                 {isImagePreview && (
                     // <div className="image-prototypes">

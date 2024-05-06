@@ -115,6 +115,14 @@
     background: linear-gradient(calc(245deg), #314321 -61.85%, rgba(241, 241, 241, 0.00) 68.73%);
 }
 
+.preview-image.notability-preview {
+    background: linear-gradient(135deg, rgba(49, 67, 33, 0.5) -80.85%, rgba(241, 241, 241, 0.00) 68.73%);
+}
+
+.preview-image-container:hover .notability-preview {
+    background: linear-gradient(135deg, #314321 -61.85%, rgba(241, 241, 241, 0.00) 68.73%);
+}
+
 .preview-image.ms-social-preview {
     background: linear-gradient(65deg, rgba(49, 67, 33, 0.5) -71.85%, rgba(241, 241, 241, 0.00) 80.73%);
 }
@@ -264,6 +272,52 @@
     translateY(0);
     opacity: 0.9;
 }
+
+/* iPad & Notability */
+
+.ipad-prototypes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    opacity: 0;
+}
+
+.ipad-prototypes--loaded {
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notability-preview {
+    display: flex;
+    align-items: center;
+}
+
+.notability-preview .ipad {
+    width: 64%;
+    transition: opacity 0.5s ease-in-out,
+                width 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4),
+                transform 0.6s cubic-bezier(0.7, -0.4, 0.4, 1.4);
+}
+
+.notability-preview .ipad-prototypes:hover {
+    opacity: 0.9;
+}
+
+.notability-preview .ipad-prototypes:hover .first {
+    transform: translateY(-160px);
+}
+
+.notability-preview .ipad-prototypes:hover .third {
+    transform: translateY(160px);
+}
+
+.notability-preview .ipad-prototypes:hover .second {
+    width: 84%;
+}
+
 
 /* Images & Videos */
 

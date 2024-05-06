@@ -105,7 +105,6 @@ export default function MSOnboarding() {
                 </div>
             </div>
 
-
             <div className="row row-2">
                 <div className="left">
                     <h2>Music streaming has alienated both music lovers and boundary-pushing artists</h2>

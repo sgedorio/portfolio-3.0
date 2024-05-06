@@ -1,6 +1,6 @@
 const workPreviewsData = [
     {
-        title: "Marine Snow, Onboarding",
+        title: "Marine Snow : Onboarding",
         pageUrl: "./ms-onboarding",
         className: "ms-onboarding-preview",
         previewAsset: {
@@ -24,28 +24,32 @@ const workPreviewsData = [
         skills: "User Research, Mobile Interface Design, Product Growth Strategy, Product Analytics"
     }, 
     {
-        title: "Marine Snow, Social ",
-        inProgress: true,
-        className: "ms-social-preview",
+        title: "Notability : Reviewing Notes Made Easier",
+        pageUrl: "./notability",
+        className: "notability-preview",
         previewAsset: {
-            mobile: [
+            ipad: [
                 {
                     className: "first",
-                    videoScreen: require('../img/ecosystem.mp4')
+                    staticScreen: require('../img/notability1.png')
+                }, 
+                {
+                    className: "second",
+                    videoScreen: require('../img/notability2-6.mp4')
                 },
                 {
-                    className: "second combine-shards",
-                    videoScreen: require('../img/group-creation.mp4') ,
-                    currentTime: 20
+                    className: "third",
+                    staticScreen: require('../img/notability3.png')
                 }
             ]
         },
-        overview: "Inspired by the intimate world of YouTube comments, Instagram’s defunct Activity feed, Facebook groups, and the sleek display of fleeting data across fintech apps, Marine Snow crafted a unique social experience that blends the joy of listening with engaging discussions, all in a single space.",
+        // overview: "First impressions are critical for early-stage products. The onboarding experience underwent several iterations to explain parts of the product contextually, minimizing text to avoid overload. A high bar for visuals was set to create a delightful yet luxurious experience.",
+        overview: "Successful students using Notability may spend hours cross-referencing notes with lecture recordings to ensure they’ve covered all learning material. Gamified features and LLM solutions can establish note reviews as a fun routine and cut time spent identifying discrepancies.",
         role: "Product Designer",
-        skills: "Mobile Interface Design"
+        skills: "User Research, Tablet Interface Design"
     },
     {
-        title: "Marine Snow x ARTCAMP",
+        title: "Marine Snow 𖣐 ARTCAMP",
         pageUrl: "https://www.madeatartcamp.com/marine-snow",
         className: "ms-artcamp-preview",
         previewAsset: {
@@ -96,27 +100,25 @@ const workPreviewsData = [
         skills: "Concept Development"
     },
     {
-        title: "WREK Design Collective",
-        // pageUrl: "https://seangedorio.com/wdc.html",
-        pageUrl: "./wrek-design-collective",
-        className: "wdc-preview",
+        title: "Marine Snow : Socializing the Music Experience",
+        inProgress: true,
+        className: "ms-social-preview",
         previewAsset: {
-            image: {
-                className: "wrek",
-                imageLayers: [
-                    [
-                        {
-                            imgSrc: require('../img/tshirtfall2018-transparent.png'),
-                            className: "",
-                            alt: "wrek"
-                        }
-                    ]
-                ]
-            }
+            mobile: [
+                {
+                    className: "first",
+                    videoScreen: require('../img/ecosystem.mp4')
+                },
+                {
+                    className: "second combine-shards",
+                    videoScreen: require('../img/group-creation.mp4') ,
+                    currentTime: 20
+                }
+            ]
         },
-        overview: "WREK Design Collective is a space I created within WREK Atlanta 91.1FM to experiment on print and design. From self-taught screenprinting to zine-making to creative coding, meshing raw DIY ethics with modern software to create wacky works was our goal.",
-        role: "Design Leader, Publicity Director",
-        skills: "Graphic Design, Print Design, Branding"
+        overview: "Inspired by the intimate world of YouTube comments, Instagram’s defunct Activity feed, Facebook groups, and the sleek display of fleeting data across fintech apps, Marine Snow crafted a unique social experience that blends the joy of listening with engaging discussions, all in a single space.",
+        role: "Product Designer",
+        skills: "Mobile Interface Design"
     },
     {
         title: "Supply Me",
@@ -138,6 +140,29 @@ const workPreviewsData = [
         overview: "Supply Me is a school supply trading app that alleviates out-of-pocket expenses made by public school teachers for their students' supplies.",
         role: "Product Designer",
         skills: "User Research, Mobile Interface Design"
+    },
+    {
+        title: "WREK Design Collective",
+        // pageUrl: "https://seangedorio.com/wdc.html",
+        pageUrl: "./wrek-design-collective",
+        className: "wdc-preview",
+        previewAsset: {
+            image: {
+                className: "wrek",
+                imageLayers: [
+                    [
+                        {
+                            imgSrc: require('../img/tshirtfall2018-transparent.png'),
+                            className: "",
+                            alt: "wrek"
+                        }
+                    ]
+                ]
+            }
+        },
+        overview: "WREK Design Collective is a space I created within WREK Atlanta 91.1FM to experiment on print and design. From self-taught screenprinting to zine-making to creative coding, meshing raw DIY ethics with modern software to create wacky works was our goal.",
+        role: "Design Leader, Publicity Director",
+        skills: "Graphic Design, Print Design, Branding"
     }
 ]
 

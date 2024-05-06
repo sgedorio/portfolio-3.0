@@ -6,11 +6,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import About from './pages/About';
 import Play from './pages/Play';
 import Work from './pages/Work';
+import Notability from './pages/Notability';
 import MSOnboarding from './pages/MSOnboarding';
 import WREKDesignCollective from './pages/WREKDesignCollective';
 import SupplyMe from './pages/SupplyMe';
 import EightBallZines from './pages/8BallZines';
 import Sidebar from './components/Sidebar';
+import TestPage from './pages/TestPage';
 import './App.css';
 import ScrollToTop from "./components/scrollToTop";
 import burger from './img/burger.svg';
@@ -78,10 +80,12 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/work" exact element={<Work />} />
               <Route path="/play" element={<Play />} />
+              <Route path="/work/notability" element={<Notability />} />
               <Route path="/work/ms-onboarding" element={<MSOnboarding />} />
               <Route path="/work/wrek-design-collective" element={<WREKDesignCollective />} />
               <Route path="/work/supply-me" element={<SupplyMe />} />
               <Route path="/play/8-ball-zines" element={<EightBallZines />} />
+              {/* <Route path="/work/testPage" element={<TestPage />} /> */}
             </Routes>
           </div>
           {isToggled 

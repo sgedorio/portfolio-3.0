@@ -1,0 +1,24 @@
+.ipad {
+    height: auto;
+    /* aspect-ratio: calc(500 / 358.42); */
+    aspect-ratio: calc(798.72 / 618.46);
+    position: relative;
+  }
+  
+  .ipad > * {
+    position: absolute;
+  }
+  
+  .ipad .ipad-device {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .ipad .screen {
+    width: 93%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
