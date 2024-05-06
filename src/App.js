@@ -12,7 +12,6 @@ import WREKDesignCollective from './pages/WREKDesignCollective';
 import SupplyMe from './pages/SupplyMe';
 import EightBallZines from './pages/8BallZines';
 import Sidebar from './components/Sidebar';
-import TestPage from './pages/TestPage';
 import './App.css';
 import ScrollToTop from "./components/scrollToTop";
 import burger from './img/burger.svg';
@@ -85,7 +84,6 @@ function App() {
               <Route path="/work/wrek-design-collective" element={<WREKDesignCollective />} />
               <Route path="/work/supply-me" element={<SupplyMe />} />
               <Route path="/play/8-ball-zines" element={<EightBallZines />} />
-              {/* <Route path="/work/testPage" element={<TestPage />} /> */}
             </Routes>
           </div>
           {isToggled 
