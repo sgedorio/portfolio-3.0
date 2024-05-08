@@ -63,7 +63,7 @@ export default function Notability() {
                         <div className="contributions">
                             <h3>Contributions</h3>
                             <div className="copy">
-                                <p>This was a design challenge assigned to me by Notability’s Director of Design. I conducted the research and designed all the solutions and prototypes shown on this page.</p>
+                                <p>This was a paid design challenge assigned to me by Notability’s Director of Design. I conducted the research and designed all the solutions and prototypes shown on this page.</p>
                             </div>
                         </div>
                         <div className="tools">
