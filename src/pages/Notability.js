@@ -21,9 +21,9 @@ import impactEffortMatrix from "../img/notability/impactEffortMatrix.png"
 import prototype1 from "../img/notability/notabilityProto1.mp4"
 import prototype2 from "../img/notability/notabilityProto2.mp4"
 import prototype3 from "../img/notability2-6.mp4"
-import featureExp1 from "../img/notability/featureExplanation1.png"
-import featureExp2 from "../img/notability/featureExplanation2.png"
-import featureExp3 from "../img/notability/featureExplanation3.png"
+import featureExp1 from "../img/notability/featureExp1.png"
+import featureExp2 from "../img/notability/featureExp2.png"
+import featureExp3 from "../img/notability/featureExp3.png"
 
 export default function Notability() {
     const [imgLoaded, setImgsLoaded] = useState(false);
