@@ -31,7 +31,7 @@ export default function Sidebar({ isSidebarVisible, isToggled, toggleSidebar }) 
                 <div className="bio">
                     <p>I’m a <span className="bold">Product Designer</span> who loves untangling complex problems and bringing clarity to ambiguity.</p>
                     <p>I have a passion for tools that ooze joy.</p>
-                    <p>Currently looking for full-time / freelance opportunities.</p>
+                    <p>Currently at Fanatics Betting & Gaming.</p>
                 </div>
                 <div className="contact">
                     <a href="https://www.linkedin.com/in/seangedorio/" alt="LinkedIn"><img src={LinkedIn} alt="LinkedIn" /></a>
